@@ -1,0 +1,13 @@
+﻿<Window x:Class="TheApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheApp"
+        mc:Ignorable="d"
+        Title="TheApp" Height="200" Width="400">
+    <Grid>
+        <Button x:Name="button" Content="Load Library" HorizontalAlignment="Left" Margin="54,40,0,0" VerticalAlignment="Top" Click="button_Click"/>
+
+    </Grid>
+</Window>
