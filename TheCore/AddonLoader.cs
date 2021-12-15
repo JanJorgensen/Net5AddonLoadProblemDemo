@@ -6,7 +6,7 @@ namespace TheCore
 {
     public class AddonLoader
     {
-        public static void LoadTheAddon()
+        public static void LoadAndActivateTheAddon()
         {
             var assembly = Assembly.LoadFrom("TheAddon.dll");
             var type = assembly.GetExportedTypes().Where(t => t.Name == "AddonMain").FirstOrDefault();

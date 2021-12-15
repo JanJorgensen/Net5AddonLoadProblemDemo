@@ -2,7 +2,7 @@
 Files demonstrating the problem with load of System.IO.Ports.dll when used from addon class library in .NET 5
 
 
-When executed and the button is pressed, the assembly TheAddon.dll is loaded via reflection, the class AddonMain is instantiated and its method 'Action' is called.
+When the WPF application TheApp is started and the UI button is pressed, the assembly TheAddon.dll is loaded via reflection, the class AddonMain is instantiated and its method 'Action' is called.
 
 At the moment 'Action' is called, this error happens:
 
@@ -21,3 +21,7 @@ System.IO.FileNotFoundException
    at System.Windows.Application.Run()
    at TheApp.App.Main()
 ```
+
+
+I also added another WPF applicalication (TheDirectUserApp) that directly has a project reference to TheAddon. That makes the application load the System.IO.Ports.dll directly when started, and everything works.
+But that's not what I want. I don''t wish to have hard references to all my addons from all my wpf and console applications.

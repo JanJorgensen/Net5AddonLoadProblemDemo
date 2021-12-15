@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheApp", "TheApp\TheApp.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheCore", "TheCore\TheCore.csproj", "{4896BAA3-25DE-465F-864D-D3FB6C2A1B68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheAddon", "TheAddon\TheAddon.csproj", "{02633A2D-BCF7-42B6-8A65-4EC35A4CC01E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheAddon", "TheAddon\TheAddon.csproj", "{02633A2D-BCF7-42B6-8A65-4EC35A4CC01E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheDirectUserApp", "TheDirectUserApp\TheDirectUserApp.csproj", "{BD2EE5A9-0CB2-4C2C-9306-9656D4F8F0EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{02633A2D-BCF7-42B6-8A65-4EC35A4CC01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02633A2D-BCF7-42B6-8A65-4EC35A4CC01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02633A2D-BCF7-42B6-8A65-4EC35A4CC01E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD2EE5A9-0CB2-4C2C-9306-9656D4F8F0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2EE5A9-0CB2-4C2C-9306-9656D4F8F0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2EE5A9-0CB2-4C2C-9306-9656D4F8F0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2EE5A9-0CB2-4C2C-9306-9656D4F8F0EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
