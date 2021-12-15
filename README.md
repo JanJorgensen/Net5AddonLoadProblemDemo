@@ -22,6 +22,9 @@ System.IO.FileNotFoundException
    at TheApp.App.Main()
 ```
 
+It makes no difference to use version 5.0.1 or 6.0.0 of System.IO.Ports.dll.
 
 I also added another WPF applicalication (TheDirectUserApp) that directly has a project reference to TheAddon. That makes the application load the System.IO.Ports.dll directly when started, and everything works.
 But that's not what I want. I don''t wish to have hard references to all my addons from all my wpf and console applications.
+As a side effect, I now get a System.PlatformNotSupportedException (""System.IO.Ports is currently only supported on Windows"") if TheDirectUserApp has been executed before TheApp.
+Building TheDirectUserApp creates the ""runtimes"" folder in the output folder, where System.IO.Ports.dll can be found in runtimes\win\lib\netstandard2.0 (not net5.0 !!). At the same time System.IO.Ports.dll is also copied directly into the output folder.
