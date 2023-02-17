@@ -30,12 +30,12 @@ namespace TheApp
         {
             try
             {
-                TheCore.AddonLoader.LoadAndActivateTheAddon();
+                TheCore.AddonLoader.LoadAndActivateAllAddons();
                 MessageBox.Show(this, "SUCCESS", "Plugin Loading");
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Trace.WriteLine("Load Addon exception: " + ex.ToString());
+                System.Diagnostics.Trace.WriteLine("Load Addon exception: " + ex.GetType().Name + ", " + ex.ToString());
                 MessageBox.Show(this, "ERROR !", "Plugin Loading", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }

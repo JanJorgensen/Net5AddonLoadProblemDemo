@@ -9,5 +9,6 @@ namespace TheCore
     public interface IAddon
     {
         object Action();
+        System.Type GetSomeType();
     }
 }
