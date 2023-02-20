@@ -6,7 +6,6 @@
     <OutputPath>..\bin\addons</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +15,6 @@
   <ItemGroup>
     <ProjectReference Include="..\TheCore\TheCore.csproj">
       <Private>false</Private>
-      <!--<ExcludeAssets>runtime</ExcludeAssets>-->
     </ProjectReference>
   </ItemGroup>
 

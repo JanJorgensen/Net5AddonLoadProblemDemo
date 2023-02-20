@@ -30,7 +30,7 @@ namespace TheDirectUserApp
         {
             try
             {
-                TheCore.AddonLoader.LoadAndActivateTheAddon();
+                TheCore.AddonLoader.LoadAndActivateAllAddons();
                 MessageBox.Show(this, "SUCCESS", "Plugin Loading");
             }
             catch (Exception ex)

@@ -13,11 +13,9 @@
   <ItemGroup>
     <ProjectReference Include="..\TheCore\TheCore.csproj">
       <Private>false</Private>
-      <ExcludeAssets>runtime</ExcludeAssets>
     </ProjectReference>
     <ProjectReference Include="..\TheAddon\TheAddon.csproj">
       <Private>false</Private>
-      <ExcludeAssets>runtime</ExcludeAssets>
     </ProjectReference>
   </ItemGroup>
 
